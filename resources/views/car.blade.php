@@ -30,7 +30,7 @@
         <div class="col-md-4">
             <h2 class="display-6">{{ $car->name }}</h2>
             <p class="text-dark text-body">{{ $car->description }}</p>
-            <span class="text-primary d-block">Price: {{ $car->price }}$</span>
+            <span class="text-primary d-block">Price: {{ $car->price }} UAH</span>
             <div class="mt-3">
                 <a href="{{ route('carEdit', ['id' => $car->id]) }}" type="button" class="btn btn-primary">
                     Edit Car
