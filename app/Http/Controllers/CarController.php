@@ -90,6 +90,10 @@ class CarController extends Controller
         $car->images = $images;
 
         $car->save();
+
+        return view('carEdit', [
+            'car' => $car
+        ]);
     }
 
     public function rental($id)
